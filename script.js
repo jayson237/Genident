@@ -15,6 +15,7 @@ document
         .then((response) => response.json())
         .then((data) => {
           const gender = data.gender;
+          const probability = data.probability;
           const genderText =
             gender === "male"
               ? "COWO"
@@ -27,6 +28,12 @@ document
           document.querySelector(".text-4").textContent = genderText;
           document.querySelector(".text-5").textContent = genderText;
           document.querySelector(".text-6").textContent = genderText;
+          if (data.probability) {
+            document.getElementById("hehe").textContent =
+              probability * 100 + "%";
+          } else {
+            document.getElementById("hehe").textContent = "100%";
+          }
         })
         .catch((error) => console.error("Error:", error));
     } else {
