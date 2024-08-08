@@ -30,7 +30,7 @@ document
           document.querySelector(".text-6").textContent = genderText;
           if (data.probability) {
             document.getElementById("hehe").textContent =
-              probability * 100 + "%";
+              (Math.round(probability * 100) / 100) * 100 + "%";
           } else {
             document.getElementById("hehe").textContent = "100%";
           }
