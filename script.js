@@ -1,9 +1,14 @@
 document
   .getElementById("nameForm")
   .addEventListener("submit", function (event) {
-    alert("Checking...");
     event.preventDefault();
     const name = event.target.inputName.value.trim();
+    const toaster = document.querySelector(".toast");
+    toaster.classList.add("show");
+
+    setTimeout(() => {
+      toaster.classList.remove("show");
+    }, 1500);
 
     if (name) {
       fetch(`https://api.genderize.io/?name=${name}`)
