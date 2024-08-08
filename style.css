@@ -71,7 +71,7 @@ button:hover {
 
 .wrapper div {
   position: absolute;
-  right: 160%;
+  right: 180%;
   animation-name: scrollRight;
   animation-duration: 30s;
   animation-timing-function: linear;
