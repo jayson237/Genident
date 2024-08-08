@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  padding: 0 10vw;
+  text-align: center;
+  line-height: 30px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-top: 2cqb;
+  width: 200px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  margin-inline: auto;
+  flex-direction: row;
+  height: fit-content;
+  padding: 80px 0px;
+  position: relative;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+@keyframes scrollRight {
+  to {
+    right: -110px;
+  }
+}
+
+.wrapper div {
+  position: absolute;
+  right: 160%;
+  animation-name: scrollRight;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.text-1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.text-2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.text-3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.text-4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.text-5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.text-6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+.createdBy {
+  color: #a8a8a8;
+  margin-top: 40px;
+  font-size: small;
+}
