@@ -1,6 +1,7 @@
 document
   .getElementById("nameForm")
   .addEventListener("submit", function (event) {
+    alert("Checking...");
     event.preventDefault();
     const name = event.target.inputName.value.trim();
 
